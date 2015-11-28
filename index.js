@@ -30,6 +30,12 @@ app.get('/hello', function(request, response) {
   response.render('pages/hello');
 });
 
+app.get('/myjson', function(request, response) {
+  response.writeHead(200);
+  response.write("Test Successful");
+  response.end();
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
