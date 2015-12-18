@@ -26,7 +26,7 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/hello', function(request, response) {
+app.get('/hello2', function(request, response) {
   response.render('pages/hello');
 });
 
